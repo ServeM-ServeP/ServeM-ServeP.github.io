@@ -1,115 +1,46 @@
 <!DOCTYPE html>
 <html>
-<body>
-    <h1>Hello World</h1>
-    <p>I'm hosted with GitHub Pages.</p>
+
+<head>
+    <title>Basic Top Menu</title>
     <style>
-        /* Basic styling for the menu */
         nav ul {
             list-style: none;
             padding: 0;
             margin: 0;
-            background-color: #333; /* Dark background color */
-            overflow: hidden; /* Prevents dropdown from overflowing */
+            background-color: #333;
+            overflow: hidden;
         }
 
         nav li {
-            float: left; /* Makes menu items horizontal */
+            float: left;
         }
 
         nav a {
-            display: block; /* Makes links fill the list item */
-            color: white; /* White text color */
-            text-align: center; /* Center-align text */
-            padding: 14px 16px; /* Padding around text */
-            text-decoration: none; /* Remove underlines from links */
-        }
-
-        /* Style for the dropdown menus */
-        .dropdown {
-            position: relative; /* Needed for positioning the dropdown */
-            display: inline-block; /* Makes dropdown behave like a block element */
-        }
-
-        .dropdown-content {
-            display: none; /* Initially hide the dropdown content */
-            position: absolute; /* Position the dropdown */
-            background-color: #f9f9f9; /* Light background color */
-            min-width: 160px; /* Minimum width of the dropdown */
-            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); /* Add a shadow */
-            z-index: 1; /* Ensure dropdown is on top */
-        }
-
-            .dropdown-content a {
-                color: black; /* Black text color */
-                padding: 12px 16px; /* Padding inside dropdown items */
-                text-decoration: none; /* Remove underlines */
-                display: block; /* Make dropdown items stack vertically */
-                text-align: left;
-            }
-
-                .dropdown-content a:hover {
-                    background-color: #ddd; /* Light gray on hover */
-                }
-
-        .dropdown:hover .dropdown-content {
-            display: block; /* Show the dropdown on hover */
-        }
-
-        /* Style the button to look like a menu link */
-        .dropbtn {
-            background-color: #333; /* Match the menu background */
+            display: block;
             color: white;
+            text-align: center;
             padding: 14px 16px;
-            font-size: 16px;
-            border: none;
-            cursor: pointer; /* Make it look clickable */
+            text-decoration: none;
         }
 
-            .dropbtn:hover {
-                background-color: #111; /* Darker on hover */
-            }
+        nav a:hover {
+            background-color: #111;
+        }
     </style>
+</head>
+
+<body>
 
     <nav>
         <ul>
-            <li><a href="#">Menu</a></li>
-
-            <li class="dropdown">
-                <button class="dropbtn">Subject 1</button>
-                <div class="dropdown-content">
-                    <a href="#">Item 1</a>
-                    <a href="#">Item 2</a>
-                    <a href="#">Item 3</a>
-                    <a href="#">Item 4</a>
-                    <a href="#">Item 5</a>
-                </div>
-            </li>
-
-            <li class="dropdown">
-                <button class="dropbtn">Subject 2</button>
-                <div class="dropdown-content">
-                    <a href="#">Item 1</a>
-                    <a href="#">Item 2</a>
-                    <a href="#">Item 3</a>
-                    <a href="#">Item 4</a>
-                    <a href="#">Item 5</a>
-                </div>
-            </li>
-
-            <li class="dropdown">
-                <button class="dropbtn">Subject 3</button>
-                <div class="dropdown-content">
-                    <a href="#">Item 1</a>
-                    <a href="#">Item 2</a>
-                    <a href="#">Item 3</a>
-                    <a href="#">Item 4</a>
-                    <a href="#">Item 5</a>
-                </div>
-            </li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
         </ul>
     </nav>
 
 </body>
-</html>
 
+</html>
