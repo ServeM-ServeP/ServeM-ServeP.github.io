@@ -7,50 +7,44 @@
     <style>
         body {
             text-align: center;
-            /* Center aligns inline elements */
             margin: 0;
-            /* Remove default body margin */
         }
 
         .logo-container {
             display: flex;
-            /* Use flexbox for horizontal centering */
             justify-content: center;
-            /* Center items horizontally */
             align-items: center;
-            /* Center items vertically */
-            margin-bottom: 5px;
-            /* Space between logos and menu */
+            margin-bottom: 20px;
         }
 
         .logo-container img {
-            width: 70px;
-            height: 70px;
-            /* Maintain aspect ratio */
-            margin: 0 1px;
-            /* Space between logos */
+            width: 10%;
+            height: auto;
+            margin: 0 10px;
         }
 
         nav ul {
             list-style: none;
             padding: 0;
             margin: 20px auto 0;
-            /* Center nav, add top margin */
             background-color: #333;
             overflow: hidden;
-            display: inline-block;
-            /* Makes nav center if only a few items */
+            width: 100%;
+            display: block;
         }
 
         nav li {
             float: left;
+            width: 25%;
+            box-sizing: border-box;
         }
 
         nav a {
             display: block;
             color: white;
             text-align: center;
-            padding: 14px 16px;
+            padding: 14px 0;
+            /* Equal padding on top/bottom, 0 on sides */
             text-decoration: none;
         }
 
@@ -60,7 +54,6 @@
 
         .footer {
             margin-top: 50px;
-            /*creates space between the content and footer */
         }
     </style>
 </head>
